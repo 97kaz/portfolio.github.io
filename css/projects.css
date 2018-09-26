@@ -107,12 +107,11 @@
 #project9:hover {
     background: rgba(153, 153, 153, .5)
 }
-
 @media only screen and (max-width:992px) {
     .projects {
         flex-direction: column
     }
-
+    
     .project {
         display: flex;
         align-items: center;
@@ -120,12 +119,13 @@
         text-align: center;
         cursor: pointer;
         width: 100%;
-        min-height: 250px;
+        min-height: 50px;
         margin-bottom: 20px
     }
-
+    
     .project a {
         display: block;
         font-size: 1em
     }
 }
+                    
