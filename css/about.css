@@ -1,12 +1,15 @@
 .about,
 .about-me,
 .about-me-section p {
-    box-sizing: border-box
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
 }
 
 .about-me,
 .about-me-section p,
 .photo {
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out
 }
 
@@ -23,6 +26,8 @@
 .photo-container {
 
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
 }
 
@@ -36,14 +41,21 @@
 
 .informations {
     font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     max-width: 100%;
     padding: 25px;
     margin: 100px 0;
     background: rgba(61, 61, 61, .9);
-    box-shadow: 10px 10px rgba(0, 165, 165, 0.1);
+    -webkit-box-shadow: 10px 10px rgba(0, 165, 165, 0.1);
+            box-shadow: 10px 10px rgba(0, 165, 165, 0.1);
 }
 
 .informations p {
@@ -81,14 +93,21 @@
 }
 
 .cards {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     padding: 25px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 5em;
-    align-items: center;
-    justify-content: space-around
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around
 }
 
 .cards i {
@@ -96,11 +115,15 @@
     margin: 10px;
     margin-top: 0;
     text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 .cards i:hover {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 
 #html-icon {
@@ -120,8 +143,11 @@
 }
 
 .about-me-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around
+    -ms-flex-pack: distribute;
+        justify-content: space-around
 }
 
 .about-me-section p {
@@ -131,7 +157,8 @@
     padding: 25px;
     background: rgba(61, 61, 61, .9);
     border-radius: 30px;
-    box-shadow: 3px 3px #000
+    -webkit-box-shadow: 3px 3px #000;
+            box-shadow: 3px 3px #000
 }
 
 .about-me-section p:hover {
@@ -164,8 +191,13 @@ p span {
     }
 
     .photo-container {
-        flex-direction: column;
-        align-items: center
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center
     }
 
     .cards {
@@ -183,7 +215,10 @@ p span {
     }
 
     .about-me-section {
-        flex-direction: column
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
     }
 
     .about-me-section p {
